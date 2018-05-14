@@ -1,0 +1,417 @@
+
+/*Color Palette*/
+:root {
+--yellow: rgba(249, 200, 14, 1);
+--white: rgba(247, 243, 227, 1);
+--orange: rgba(231, 147, 33, 1);
+--blue: rgba(98, 188, 204, 1);
+--black: rgba(14, 15, 25, 1);
+
+--offset: 10px;
+--border-size: 2px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a{
+  text-decoration: none;
+}
+/*-----Main Landing page----*/
+.main-landing {
+  background-color: var(--black);
+  color: var(--white);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-landing-name {
+  border: 1px var(--white) solid;
+  font-size: 9em;
+  font-weight: 700;
+  height: 50vh;
+  text-align: center;
+  transform: rotate(30deg);
+  width: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: spin;
+  animation-duration: 50000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/*--------------------Navigation Items--------------------*/
+
+.navigation-list {
+  color: var(--white);
+  list-style: none;
+  position: fixed;
+  height: 100%;
+  transform: rotate(90deg);
+  width: 15vw;
+  /*z-index: 100;*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-list-item {
+  font-size: 25px;
+  margin: 0 20px;
+}
+
+.navigation-list-item:hover {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  transition: 400ms;
+}
+
+
+          /*-----Midnight jQuery CSS-----*/
+
+.midnightHeader.white {
+  background: var(--white);
+  color: var(--black);
+}
+
+
+/*--------------------About Page--------------------*/
+.about-page {
+  background-color: var(--black);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-flexbox-left{
+  background-color: var(--orange);
+  height: 60vh;
+  width: 60vh;
+}
+
+.photo {
+  height: 80vh;
+  width: 60vh;
+  border-radius: 30px;
+}
+.about-description-hello{
+  color: var(--white);
+  font-size: 7em;
+  letter-spacing: 10px;
+  transform: rotate(15deg);
+  margin: 0;
+  padding: 0;
+}
+.about-description-content{
+  margin: 2em;
+}
+
+.about-description-content {
+  font-weight: 300;
+  margin: 2em;
+}
+
+/*--------------------Work Page-------------------*/
+
+.work-page {
+  background-color: var(--black);
+  height: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.work-page-title{
+  color: var(--white);
+  font-size: 7em;
+  letter-spacing: 10px;
+  /*transform: rotate(15deg);*/
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.work-item-flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.work-item{
+  margin: 0 30px;
+}
+
+.relaxr {
+  background-image: url("images/header_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 320px;
+}
+
+.pupperoni {
+  background-image: url("images/pup.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 320px;
+}
+
+.airbnb{
+  background-image: url("images/melbourne.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 320px;
+}
+
+.aeir{
+  background-image: url("images/aeir.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 320px;
+}
+
+.work-photo{
+  filter: brightness(80%);
+}
+
+.divImg {
+  position: relative;
+  overflow: hidden;
+}
+.divImg .caption {
+    height: 100%;
+    width: 100%;
+		cursor: pointer;
+		position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.35s ease;
+}
+.effect1:hover .caption {
+  transform: scaleY(1);
+}
+.caption-text h1{
+		text-transform: uppercase;
+		font-size: 2em;
+}
+.caption-text{
+		z-index: 5;
+		color: var(--white);
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.blur {
+		background-color: rgba(0,0,0,0.5);
+		height: 100%;
+		width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+/*---------------------Resume Button---------------------*/
+
+
+.button {
+	display: block;
+	position: relative;
+	padding: 1.5em 3em;
+	appearance: none;
+	border: 1px var(--black) solid;
+	background: transparent;
+	color: rgba(14, 15, 25, 1);
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	cursor: pointer;
+  transform: rotate(-10deg);
+}
+.button:hover{
+  transform:rotate(0deg);
+  transition: 300ms;
+}
+.button-wrapper{
+  margin: 4em;
+}
+
+/*Contact page*/
+.contact-page{
+  background-color: var(--black);
+  height: 100vh;
+  padding: 4em 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.container {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font-weight: 400;
+  font-size: 12px/16px;
+  font-family: 'Source Sans Pro', sans-serif
+}
+
+#contact {
+	background-color: var(--black);
+  border: 2px var(--white) solid;
+  border-radius: 30px;
+	padding: 25px;
+	margin: 50px 0;
+}
+
+#contact h3 {
+	color: var(--white);
+	display: block;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+#contact h4 {
+  color: var(--white);
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 1.2em;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+	width: 100%;
+	border: 1px solid #CCC;
+  /*border-radius: 15px;*/
+	background-color: var(--black);
+  color: var(--white);
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid #AAA;
+}
+
+#contact textarea {
+	height: 100px;
+	max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+  /*border-radius: 20px;*/
+	background: var(--white);
+	color: black;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 20px;
+  font-weight: 700;
+}
+
+#contact button[type="submit"]:hover {
+	/*background-color: var(--black);
+  color: var(--white);*/
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus, #contact textarea:focus {
+	outline: 0;
+	border: 1px solid #999;
+}
+::-webkit-input-placeholder {
+ color: #888;
+}
+:-moz-placeholder {
+ color: #888;
+}
+::-moz-placeholder {
+ color: #888;
+}
+:-ms-input-placeholder {
+ color: #888;
+}
