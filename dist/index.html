@@ -23,7 +23,7 @@
     <section data-midnight="white" class="about-page" id="about-page">
         <div class="about-flexbox">
             <div class="about-flexbox-left">
-                <h2 class="about-description-hello">hello.</h2>
+                <h2 class="about-description-hello">hello</h2>
                 <h3 class="about-description-content">Kendall is a
                     <b>front-end web developer</b> who's been hanging in Washington, D.C. for the past 6 years. She's creative,
                     a little edgy, and generally a bit caffeinated.</h3>
@@ -35,10 +35,13 @@
             <img src="/profile.f2fa0818.png" class="about-flexbox-right photo">
         </div>
     </section>
+
+    <!-- Work Page with Project Boxes -->
     <section class="work-page" id="work-page">
-        <h3 class="work-page-title">work.</h3>
+        <h3 class="work-page-title">work</h3>
         <div class="work-item-flexbox">
             <div class="divImg effect1 work-item">
+                <a href="https://kendallms.github.io/Relaxr-blog/">
                 <div class="relaxr work-photo lazy"></div>
                 <div class="caption">
                     <div class="blur"></div>
@@ -47,8 +50,10 @@
                         <p>A blog to relax</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="divImg effect1 work-item">
+                <a href="https://github.com/kendallms/Pupperoni">
                 <div class="pupperoni work-photo lazy"></div>
                 <div class="caption">
                     <div class="blur"></div>
@@ -57,10 +62,12 @@
                         <p>Your Perfect Pupper Match</p>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
         <div class="work-item-flexbox">
             <div class="divImg effect1 work-item">
+                <a href="https://kendallms.github.io/airbnb-inclass-practice/">
                 <div class="airbnb work-photo lazy"></div>
                 <div class="caption">
                     <div class="blur"></div>
@@ -69,8 +76,10 @@
                         <p>A redo of Airbnb</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="divImg effect1 work-item">
+                <a href="http://aeir.asee.org/">
                 <div class="aeir work-photo lazy"></div>
                 <div class="caption">
                     <div class="blur"></div>
@@ -78,19 +87,23 @@
                         <h1>ASEE</h1>
                         <p>Department of Assessment, Evaluation, and Institutional Research</p>
                     </div>
+                    </div>
+                    </a>
                 </div>
             </div>
-        </div>
+        
         <!-- Resume Download Buttton -->
         <div class="button-wrapper">
-            <a href="/images/resume.pdf" download="">
-                <button class="button">Download Resume</button>
+            <a href="/images/KMoffett-Sklaroff Resume.pdf" download="">
+                <button class="resume-button">Download Resume</button>
             </a>
         </div>
     </section>
+    
+    <!-- Contact Form -->
     <section class="contact-page" id="contact-page">
         <div class="container">
-            <form id="contact" action="" method="post">
+            <form id="contact" action="" method="POST" netlify="">
                 <h3>h e l l o again</h3>
                 <h4>kendall is currently available for work.</h4>
                 <fieldset>
@@ -100,10 +113,10 @@
                     <input placeholder="E M A I L  A D D R E S S" type="email" tabindex="2" required="">
                 </fieldset>
                 <fieldset>
-                    <input placeholder="P H O N E  N U M B E R" type="tel" tabindex="3" required="">
+                    <input placeholder="P H O N E  N U M B E R" type="tel" tabindex="3">
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Y O U R  W E B S I T E  L I N K" type="url" tabindex="4" required="">
+                    <input placeholder="Y O U R  W E B S I T E  L I N K" type="url" tabindex="4">
                 </fieldset>
                 <fieldset>
                     <textarea placeholder="Type your Message Here...." tabindex="5" required=""></textarea>

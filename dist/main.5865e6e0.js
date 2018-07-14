@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({13:[function(require,module,exports) {
+})({12:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -159,13 +159,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":13}],2:[function(require,module,exports) {
+},{"./bundle-url":12}],2:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./images/header_bg.jpg":7,"./images/pup.jpg":8,"./images/melbourne.jpg":9,"./images/aeir.jpg":10,"_css_loader":11}],19:[function(require,module,exports) {
+},{"./images/header_bg.jpg":7,"./images/pup.jpg":8,"./images/melbourne.jpg":9,"./images/aeir.jpg":10,"_css_loader":11}],27:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -194,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56365' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63992' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -335,7 +335,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],20:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -416,6 +416,6 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":13}],0:[function(require,module,exports) {
-var b=require(20);b.load([["header_bg.ebc2b0e1.jpg",7],["pup.437a8df8.jpg",8],["melbourne.d39d7eb7.jpg",9],["aeir.79340d1c.jpg",10]]);
-},{}]},{},[19,0], null)
+},{"./bundle-url":12}],0:[function(require,module,exports) {
+var b=require(28);b.load([["header_bg.ebc2b0e1.jpg",7],["pup.437a8df8.jpg",8],["melbourne.d39d7eb7.jpg",9],["aeir.79340d1c.jpg",10]]);
+},{}]},{},[27,0], null)

@@ -1,9 +1,10 @@
 
-/*Color Palette*/
+/*--------Color Palette-----------*/
 :root {
 --yellow: rgba(249, 200, 14, 1);
 --white: rgba(247, 243, 227, 1);
---orange: rgba(231, 147, 33, 1);
+/* --orange: rgba(231, 147, 33, 1); */
+--orange: #dfb8a9;
 --blue: rgba(98, 188, 204, 1);
 --black: rgba(14, 15, 25, 1);
 
@@ -18,7 +19,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-a{
+
+a {
   text-decoration: none;
 }
 /*-----Main Landing page----*/
@@ -50,6 +52,27 @@ a{
   animation-timing-function: linear;
 }
 
+@media screen and (max-width: 992px){
+  .main-landing-name{
+    font-size: 8em;
+    font-weight: 600;
+    height: 40vh;
+    text-align: center;
+    transform: rotate(30deg);
+    width: 40vh;
+  }
+}
+@media screen and (max-width: 768px){
+  .main-landing-name{
+    font-size: 475%;
+    font-weight: 600;
+    height: 28vh;
+    text-align: center;
+    transform: rotate(30deg);
+    width: 28vh;
+    overflow: visible;
+  }
+}
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -86,12 +109,15 @@ a{
   transition: 400ms;
 }
 
-
-          /*-----Midnight jQuery CSS-----*/
-
-.midnightHeader.white {
-  background: var(--white);
-  color: var(--black);
+@media screen and (max-width: 992px){
+  .navigation-list-item:hover{
+    transform: none;
+  }
+}
+@media screen and (max-width: 768px){
+  .navigation-list-item:hover{
+    transform: none;
+  }
 }
 
 
@@ -115,7 +141,7 @@ a{
 
 .about-flexbox-left{
   background-color: var(--orange);
-  height: 60vh;
+  height: 62vh;
   width: 60vh;
 }
 
@@ -140,6 +166,85 @@ a{
   font-weight: 300;
   margin: 2em;
 }
+
+@media screen and (max-width: 1220px){
+  .about-page{
+    height: auto;
+  }
+ 
+.about-description-hello{
+  font-size: 6em;
+  letter-spacing: 10px;
+}
+.photo {
+  height: 40%;
+  width: 30%;
+  border-radius: 30px;
+}
+
+.about-flexbox-left{
+  height: auto;
+  width: 30%;
+}
+}
+
+@media screen and (max-width: 992px){
+  .about-page{
+    height: auto;
+    padding-top: 15px;
+  }
+ 
+.about-description-hello{
+  font-size: 6em;
+  letter-spacing: 10px;
+}
+.photo {
+  height: 55vh;
+  width: 40vh;
+  border-radius: 30px;
+}
+
+.about-flexbox-left{
+  height: auto;
+  width: 40vh;
+}
+
+}
+@media screen and (max-width: 768px){
+  body {
+    max-width: 100%;
+  }
+
+  .about-page{
+    height: auto;
+  }
+
+  .about-flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-description-hello{
+  font-size: 5em;
+  letter-spacing: 10px;
+}
+.photo {
+  height: auto;
+  width: 65%;
+  border-radius: 30px;
+  margin-bottom: 3%;
+}
+
+.about-flexbox-left{
+  height: auto;
+  width: 65%;
+   border-radius: 30px;
+}
+
+}
+
 
 /*--------------------Work Page-------------------*/
 
@@ -250,32 +355,98 @@ a{
     top: 0;
 }
 
+@media screen and (max-width: 992px){
+  .relaxr, .aeir, .pupperoni, .airbnb{
+   height: 250px;
+   width: 250px;
+ }
+
+ 
+.divImg .caption{
+   transform: none;
+ }
+}
+
+@media screen and (max-width: 768px){
+  .work-page{
+    height: 1500px;
+  }
+
+  .work-page-title{
+    font-size: 5em;
+  }
+
+  .work-item-flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+}
+.work-item{
+  height: 90%;
+  width: 90%;
+  margin: 20px 0;
+}
+ .relaxr, .aeir, .pupperoni, .airbnb{
+   height: 100%;
+   width: 100%;
+ }
+
+ .divImg .caption{
+   transform: none;
+ }
+
+}
+
+
 
 /*---------------------Resume Button---------------------*/
 
 
-.button {
+.resume-button {
 	display: block;
 	position: relative;
 	padding: 1.5em 3em;
 	appearance: none;
-	border: 1px var(--black) solid;
-	background: transparent;
-	color: rgba(14, 15, 25, 1);
+	border: 1px --var(white) solid;
+	background-color: --var(black);
+	color: --var(white);
 	text-transform: uppercase;
 	letter-spacing: .5em;
 	cursor: pointer;
   transform: rotate(-10deg);
 }
-.button:hover{
-  transform:rotate(0deg);
+
+.resume-button:hover{
+  transform: rotate(0deg);
   transition: 300ms;
 }
+
 .button-wrapper{
   margin: 4em;
 }
 
-/*Contact page*/
+@media screen and (max-width: 992px){
+  .resume-button {
+  transform: rotate(-10deg);
+}
+  .resume-button:hover{
+    transform: rotate(-10deg);
+  }
+}
+
+@media screen and (max-width: 768px){
+     .resume-button {
+  transform: rotate(-10deg);
+}
+  .resume-button:hover{
+    transform: rotate(-10deg);
+  }
+}
+
+/*----------------------Contact page------------------*/
 .contact-page{
   background-color: var(--black);
   height: 100vh;
@@ -296,7 +467,7 @@ a{
 }
 
 .container {
-	max-width: 400px;
+  max-width: 400px;
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -414,4 +585,20 @@ fieldset {
 }
 :-ms-input-placeholder {
  color: #888;
+}
+
+@media screen and (max-width: 768px){
+  .contact-page{
+    height: auto;
+  }
+   .container{
+    max-width: 250px;
+    min-width: 65%;
+  	width: 100%;
+  }
+  #contact{
+    border: none;
+    padding: 0;
+	  margin: 30px;
+  }
 }
