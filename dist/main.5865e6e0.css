@@ -39,17 +39,23 @@ a {
   font-weight: 700;
   height: 50vh;
   text-align: center;
-  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
   width: 50vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  animation-name: spin;
-  animation-duration: 50000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-name: spin;
+
+          animation-name: spin;
+  -webkit-animation-duration: 50000ms;
+          animation-duration: 50000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 @media screen and (max-width: 992px){
@@ -58,7 +64,8 @@ a {
     font-weight: 600;
     height: 40vh;
     text-align: center;
-    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
     width: 40vh;
   }
 }
@@ -68,17 +75,30 @@ a {
     font-weight: 600;
     height: 28vh;
     text-align: center;
-    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
     width: 28vh;
     overflow: visible;
   }
 }
-@keyframes spin {
+@-webkit-keyframes spin {
     from {
-        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
     }
     to {
-        transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg);
+    }
+}
+@keyframes spin {
+    from {
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
+    to {
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg);
     }
 }
 
@@ -89,7 +109,8 @@ a {
   list-style: none;
   position: fixed;
   height: 100%;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   width: 15vw;
   /*z-index: 100;*/
 
@@ -105,18 +126,21 @@ a {
 
 .navigation-list-item:hover {
   cursor: pointer;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   transition: 400ms;
 }
 
 @media screen and (max-width: 992px){
   .navigation-list-item:hover{
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 @media screen and (max-width: 768px){
   .navigation-list-item:hover{
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -154,7 +178,8 @@ a {
   color: var(--white);
   font-size: 7em;
   letter-spacing: 10px;
-  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
   margin: 0;
   padding: 0;
 }
@@ -314,7 +339,8 @@ a {
 }
 
 .work-photo{
-  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 .divImg {
@@ -327,12 +353,17 @@ a {
 		cursor: pointer;
 		position: absolute;
     top: 0;
-    transform: scaleY(0);
-    transform-origin: top;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    transition: -webkit-transform 0.35s ease;
     transition: transform 0.35s ease;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease;
 }
 .effect1:hover .caption {
-  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 .caption-text h1{
 		text-transform: uppercase;
@@ -344,7 +375,8 @@ a {
     position: absolute;
     width: 100%;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     text-align: center;
 }
 .blur {
@@ -363,7 +395,8 @@ a {
 
  
 .divImg .caption{
-   transform: none;
+   -webkit-transform: none;
+           transform: none;
  }
 }
 
@@ -395,7 +428,8 @@ a {
  }
 
  .divImg .caption{
-   transform: none;
+   -webkit-transform: none;
+           transform: none;
  }
 
 }
@@ -409,18 +443,20 @@ a {
 	display: block;
 	position: relative;
 	padding: 1.5em 3em;
-	appearance: none;
 	border: 1px --var(white) solid;
 	background-color: --var(black);
 	color: --var(white);
 	text-transform: uppercase;
 	letter-spacing: .5em;
 	cursor: pointer;
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-appearance: none;
 }
 
 .resume-button:hover{
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   transition: 300ms;
 }
 
@@ -430,19 +466,23 @@ a {
 
 @media screen and (max-width: 992px){
   .resume-button {
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
   .resume-button:hover{
-    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
 }
 
 @media screen and (max-width: 768px){
      .resume-button {
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
   .resume-button:hover{
-    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
 }
 
@@ -533,8 +573,6 @@ fieldset {
 #contact input[type="tel"]:hover,
 #contact input[type="url"]:hover,
 #contact textarea:hover {
-	-webkit-transition: border-color 0.3s ease-in-out;
-	-moz-transition: border-color 0.3s ease-in-out;
 	transition: border-color 0.3s ease-in-out;
 	border: 1px solid #AAA;
 }
@@ -561,8 +599,6 @@ fieldset {
 #contact button[type="submit"]:hover {
 	/*background-color: var(--black);
   color: var(--white);*/
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
 

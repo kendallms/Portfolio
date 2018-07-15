@@ -409,7 +409,6 @@ a {
 	display: block;
 	position: relative;
 	padding: 1.5em 3em;
-	appearance: none;
 	border: 1px --var(white) solid;
 	background-color: --var(black);
 	color: --var(white);
