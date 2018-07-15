@@ -403,23 +403,23 @@ a {
 
 
 /*---------------------Resume Button---------------------*/
-
-
-.resume-button {
-	display: block;
+input[type="button" i], input[type="submit" i], input[type="reset" i], 
+input[type="file" i]::-webkit-file-upload-button, .resume-btn{
+  display: block;
 	position: relative;
-	padding: 1.5em 3em;
-	border: 1px --var(white) solid;
-	background-color: --var(black);
-	color: --var(white);
-	text-transform: uppercase;
+	padding: 1.5em 3em; 
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--white);
+  text-transform: uppercase;
 	letter-spacing: .5em;
 	cursor: pointer;
   transform: rotate(-10deg);
-  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-.resume-button:hover{
+
+.resume-btn:hover{
   transform: rotate(0deg);
   transition: 300ms;
 }
@@ -429,22 +429,22 @@ a {
 }
 
 @media screen and (max-width: 992px){
-  .resume-button {
+  .resume-btn {
   transform: rotate(-10deg);
 }
-  .resume-button:hover{
+  .resume-btn:hover{
     transform: rotate(-10deg);
   }
 }
 
 @media screen and (max-width: 768px){
-     .resume-button {
+     .resume-btn {
   transform: rotate(-10deg);
 }
-  .resume-button:hover{
+  .resume-btn:hover{
     transform: rotate(-10deg);
   }
-}
+} 
 
 /*----------------------Contact page------------------*/
 .contact-page{
@@ -462,7 +462,7 @@ a {
 	-webkit-font-smoothing:antialiased;
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
-	font-smoothing: antialiased;
+	/* font-smoothing: antialiased; */
 	text-rendering: optimizeLegibility;
 }
 
@@ -556,6 +556,7 @@ fieldset {
 	padding: 10px;
 	font-size: 20px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 #contact button[type="submit"]:hover {

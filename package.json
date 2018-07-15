@@ -13,5 +13,8 @@
     "jquery-lazy": "^1.7.8",
     "jquery.scrollto": "^2.1.2",
     "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.5"
   }
 }

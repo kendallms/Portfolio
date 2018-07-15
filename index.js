@@ -6,9 +6,10 @@ $(document).ready(function(){
     $(this).scrollTop(0);
 
 
-    $(function () {
-        $('.lazy').Lazy();
-    });
+//     $(function () {
+//         $('.lazy').Lazy();
+//     }
+// );
 
 
     $('#hello-nav').click(function (event) {
