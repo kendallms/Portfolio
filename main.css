@@ -417,6 +417,7 @@ a {
 	letter-spacing: .5em;
 	cursor: pointer;
   transform: rotate(-10deg);
+  -webkit-appearance: none;
 }
 
 .resume-button:hover{
