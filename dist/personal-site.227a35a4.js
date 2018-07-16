@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({4:[function(require,module,exports) {
+})({10:[function(require,module,exports) {
 // $('#work-nav').click(function(){
 //     $('.about-page').scrollTo('li:eq(15)', 2500)
 // })
@@ -130,7 +130,7 @@ $(document).ready(function () {
         $("html, body").scrollTop(goTop);
     });
 });
-},{}],21:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -159,7 +159,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55181' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58199' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -300,5 +300,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[21,4], null)
+},{}]},{},[19,10], null)
 //# sourceMappingURL=/personal-site.227a35a4.map

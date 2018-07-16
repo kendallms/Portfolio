@@ -141,8 +141,12 @@ a {
 
 .about-flexbox-left{
   background-color: var(--orange);
-  height: 62vh;
-  width: 60vh;
+  height: 40%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .photo {
@@ -158,13 +162,12 @@ a {
   margin: 0;
   padding: 0;
 }
-.about-description-content{
-  margin: 2em;
-}
+
+
 
 .about-description-content {
   font-weight: 300;
-  margin: 2em;
+  margin: 1em 2em;
 }
 
 @media screen and (max-width: 1220px){
@@ -449,7 +452,7 @@ input[type="file" i]::-webkit-file-upload-button, .resume-btn{
 /*----------------------Contact page------------------*/
 .contact-page{
   background-color: var(--black);
-  height: 100vh;
+  height: auto;
   padding: 4em 0;
 }
 
