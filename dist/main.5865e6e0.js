@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({18:[function(require,module,exports) {
+})({19:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -128,7 +128,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],17:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -159,13 +159,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":18}],8:[function(require,module,exports) {
+},{"./bundle-url":19}],8:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./images/header_bg.jpg":13,"./images/pup.jpg":14,"./images/melbourne.jpg":15,"./images/aeir.jpg":16,"_css_loader":17}],34:[function(require,module,exports) {
+},{"./images/header_bg.jpg":14,"./images/pup.jpg":15,"./images/melbourne.jpg":16,"./images/aeir.jpg":17,"_css_loader":18}],20:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -194,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52562' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54277' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -335,7 +335,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],35:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -416,6 +416,6 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":18}],0:[function(require,module,exports) {
-var b=require(35);b.load([["header_bg.ebc2b0e1.jpg",13],["pup.437a8df8.jpg",14],["melbourne.d39d7eb7.jpg",15],["aeir.79340d1c.jpg",16]]);
-},{}]},{},[34,0], null)
+},{"./bundle-url":19}],0:[function(require,module,exports) {
+var b=require(22);b.load([["header_bg.ebc2b0e1.jpg",14],["pup.437a8df8.jpg",15],["melbourne.d39d7eb7.jpg",16],["aeir.79340d1c.jpg",17]]);
+},{}]},{},[20,0], null)
