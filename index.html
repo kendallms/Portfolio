@@ -103,12 +103,41 @@
     
     <!-- Contact Form -->
     <section class="contact-page" id="contact-page">
-        <div class="container">
+
+        <form name="contact" method="POST" netlify>
+            <p>
+                <label>Your Name:
+                    <input type="text" name="name" />
+                </label>
+            </p>
+            <p>
+                <label>Your Email:
+                    <input type="email" name="email" />
+                </label>
+            </p>
+            <p>
+                <label>Your Role:
+                    <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Message:
+                    <textarea name="message"></textarea>
+                </label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+        <!-- <div class="container">
             <form netlify id="contact" method="POST" name="contact">
                 <h3>h e l l o again</h3>
                 <h4>kendall is currently available for work.</h4>
                 <fieldset>
-                    <input placeholder="N A M E" type="text" tabindex="1" required autofocus>
+                    <input placeholder="N A M E" type="text" tabindex="1" required>
                 </fieldset>
                 <fieldset>
                     <input placeholder="E M A I L  A D D R E S S" type="email" tabindex="2" required>
@@ -125,7 +154,7 @@
                 <fieldset>
                     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">S u b m i t</button>
                 </fieldset>
-            </form>
+            </form> -->
         </div>
     </section>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
