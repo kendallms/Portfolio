@@ -103,28 +103,28 @@
     
     <!-- Contact Form -->
     <section class="contact-page" id="contact-page">
-
-        <form name="contact" method="POST" netlify="">
+        <div class="container">
+     <form name="contact" method="POST" netlify="" id="contact">
+        <h3>h e l l o again</h3>
+        <h4>kendall is currently available for work.</h4>
             <p>
-                <label>Your Name:
+                <label>NAME:
                     <input type="text" name="name">
                 </label>
             </p>
             <p>
-                <label>Your Email:
+                <label>EMAIL ADDRESS:
                     <input type="email" name="email">
                 </label>
             </p>
             <p>
-                <label>Your Role:
-                    <select name="role[]" multiple="">
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                    </select>
+                <label>PHONE NUMBER:
+                    <input type="text">
+                    
                 </label>
             </p>
             <p>
-                <label>Message:
+                <label>MESSAGE:
                     <textarea name="message"></textarea>
                 </label>
             </p>
@@ -132,6 +132,7 @@
                 <button type="submit">Send</button>
             </p>
         </form>
+        </div>
         <!-- <div class="container">
             <form netlify id="contact" method="POST" name="contact">
                 <h3>h e l l o again</h3>

@@ -482,6 +482,7 @@ input[type="file" i]::-webkit-file-upload-button, .resume-btn{
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
+  color: var(--white);
   font-weight: 400;
   font-size: 12px/16px;
   font-family: 'Source Sans Pro', sans-serif
@@ -509,7 +510,7 @@ input[type="file" i]::-webkit-file-upload-button, .resume-btn{
 	font-size: 1.2em;
 }
 
-fieldset {
+label {
 	border: medium none !important;
 	margin: 0 0 10px;
 	min-width: 100%;
@@ -542,7 +543,8 @@ fieldset {
 	border: 1px solid #AAA;
 }
 
-#contact textarea {
+#contact label {
+  color: var(--white);
 	height: 100px;
 	max-width: 100%;
   resize: none;
@@ -578,16 +580,16 @@ fieldset {
 	outline: 0;
 	border: 1px solid #999;
 }
-::-webkit-input-placeholder {
+::-webkit-input-label {
  color: #888;
 }
-:-moz-placeholder {
+:-moz-label {
  color: #888;
 }
-::-moz-placeholder {
+::-moz-label {
  color: #888;
 }
-:-ms-input-placeholder {
+:-ms-input-label {
  color: #888;
 }
 

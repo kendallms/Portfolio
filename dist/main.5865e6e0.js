@@ -165,7 +165,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./images/header_bg.jpg":13,"./images/pup.jpg":14,"./images/melbourne.jpg":15,"./images/aeir.jpg":16,"_css_loader":17}],19:[function(require,module,exports) {
+},{"./images/header_bg.jpg":13,"./images/pup.jpg":14,"./images/melbourne.jpg":15,"./images/aeir.jpg":16,"_css_loader":17}],34:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -194,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52502' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52562' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -335,7 +335,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],21:[function(require,module,exports) {
+},{}],35:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -417,5 +417,5 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":18}],0:[function(require,module,exports) {
-var b=require(21);b.load([["header_bg.ebc2b0e1.jpg",13],["pup.437a8df8.jpg",14],["melbourne.d39d7eb7.jpg",15],["aeir.79340d1c.jpg",16]]);
-},{}]},{},[19,0], null)
+var b=require(35);b.load([["header_bg.ebc2b0e1.jpg",13],["pup.437a8df8.jpg",14],["melbourne.d39d7eb7.jpg",15],["aeir.79340d1c.jpg",16]]);
+},{}]},{},[34,0], null)
