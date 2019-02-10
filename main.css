@@ -253,7 +253,7 @@ a {
 
 .work-page {
   background-color: var(--black);
-  height: 1100px;
+  height: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -274,6 +274,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* margin: 1rem 0; */
 }
 
 .work-item{
@@ -315,6 +316,15 @@ a {
   height: 320px;
   width: 320px;
 }
+
+/* .kenTunes{
+  background-image: url("images/headphones.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 320px;
+} */
 
 .work-photo{
   filter: brightness(80%);
@@ -359,7 +369,7 @@ a {
 }
 
 @media screen and (max-width: 992px){
-  .relaxr, .aeir, .pupperoni, .airbnb{
+  .relaxr, .aeir, .pupperoni, .airbnb, .kenTunes{
    height: 250px;
    width: 250px;
  }
@@ -392,7 +402,7 @@ a {
   width: 90%;
   margin: 20px 0;
 }
- .relaxr, .aeir, .pupperoni, .airbnb{
+ .relaxr, .aeir, .pupperoni, .airbnb, .kenTunes{
    height: 100%;
    width: 100%;
  }

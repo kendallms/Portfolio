@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="content-type" content="text/html" charset="utf-8"> -->
     <meta name="viewport" content="width=device-width">
     <title>Kendall Moffett-Sklaroff</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="sparkles.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="https://kendallms.com/apple-touch-icon.png">
-    <!-- <script src="/app.js"></script>
-    <script>require('initialize');</script> -->
+     <!-- <script src="/app.js"></script>
+    <script>require('initialize');</script>  -->
 </head>
 <body>
     <nav class="navigation">
@@ -40,6 +41,7 @@
     <!-- Work Page with Project Boxes -->
     <section class="work-page" id="work-page">
         <h3 class="work-page-title">work</h3>
+
         <div class="work-item-flexbox">
             <div class="divImg effect1 work-item">
                 <a href="https://kendallms.github.io/Relaxr-blog/">
@@ -53,6 +55,7 @@
                 </div>
                 </a>
             </div>
+
             <div class="divImg effect1 work-item">
                 <a href="https://github.com/kendallms/Pupperoni">
                 <div class="pupperoni work-photo lazy"></div>
@@ -66,6 +69,7 @@
                 </a>
             </div>
         </div>
+
         <div class="work-item-flexbox">
             <div class="divImg effect1 work-item">
                 <a href="https://kendallms.github.io/airbnb-inclass-practice/">
@@ -79,6 +83,7 @@
                 </div>
                 </a>
             </div>
+
             <div class="divImg effect1 work-item">
                 <a href="http://aeir.asee.org/">
                 <div class="aeir work-photo lazy"></div>
@@ -90,9 +95,27 @@
                     </div>
                     </div>
                     </a>
-                </div>
+             </div>
+         </div>
+       
+
+        <!-- <div class="work-item-flexbox">
+            <div class="divImg effect1 work-item">
+                <a href="https://kennietunes.com/">
+                    <div class="kenTunes work-photo lazy"></div>
+                        <div class="caption">
+                            <div class="blur"></div>
+                             <div class="caption-text">
+                              <h1>Kennie Tunes</h1>
+                                 <p>My personal music blog built with React</p>
+                             </div>
+                        </div>
+                </a>
             </div>
-        </div>
+            
+        </div> -->
+
+
         <!-- Resume Download Buttton -->
     <div class="button-wrapper">     
         <a href="images/Kendall Moffett-Sklaroff Resume.pdf" download>
@@ -104,7 +127,7 @@
     <!-- Contact Form -->
     <section class="contact-page" id="contact-page">
         <div class="container">
-     <form name="contact" method="POST" netlify id="contact">
+     <form name="contact" method="POST" netlify id="contact" netlify-honeypot="bot-field" data-netlify="true">
         <h3>h e l l o again</h3>
         <h4>kendall is currently available for work.</h4>
             <p>
@@ -133,33 +156,12 @@
             </p>
         </form>
         </div>
-        <!-- <div class="container">
-            <form netlify id="contact" method="POST" name="contact">
-                <h3>h e l l o again</h3>
-                <h4>kendall is currently available for work.</h4>
-                <fieldset>
-                    <input placeholder="N A M E" type="text" tabindex="1" required>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="E M A I L  A D D R E S S" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="P H O N E  N U M B E R" type="tel" tabindex="3">
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Y O U R  W E B S I T E  L I N K" type="url" tabindex="4">
-                </fieldset>
-                <fieldset>
-                    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">S u b m i t</button>
-                </fieldset>
-            </form> -->
         </div>
     </section>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>
